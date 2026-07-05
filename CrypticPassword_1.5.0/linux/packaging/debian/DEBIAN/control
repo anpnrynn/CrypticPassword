@@ -1,0 +1,9 @@
+Package: crypticpassword
+Version: 1.5.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: libc6, libgtk-3-0
+Maintainer: Anoop Kumar Narayanan <unknown@example.invalid>
+Description: CrypticPassword native GTK+ password generation matrix tool
+ A native GTK+ implementation of the CrypticPassword 3-matrix password generator.

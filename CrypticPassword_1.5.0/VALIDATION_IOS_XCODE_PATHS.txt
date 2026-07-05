@@ -1,0 +1,9 @@
+CrypticPassword iOS 1.5.0 validation
+
+Fixed Xcode project file references:
+- Removed bogus group path that made children resolve under ios/xcode/CrypticPasswordiOS/.
+- Changed Swift file references from ../../src/*.swift to SOURCE_ROOT ../src/*.swift.
+- Changed Info.plist reference from ../../Info.plist to SOURCE_ROOT ../Info.plist.
+- Changed INFOPLIST_FILE build setting to ../Info.plist.
+
+Result: all project file references resolve to real files from ios/xcode/CrypticPasswordiOS.xcodeproj.

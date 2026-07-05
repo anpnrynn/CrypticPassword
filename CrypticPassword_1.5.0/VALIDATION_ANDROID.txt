@@ -1,0 +1,7 @@
+PASS version1_0 / seed1 HCFMDOB/9S7'
+PASS version1_1 / seed1 +`zT0<>8:3?k
+PASS version2_0 / seed2 HCFMDOB|9S7?
+PASS version2_1 / seed2 -|*T0_-i(3\u
+ANDROID_JAVA_CORE_PASS_ALL_ALGORITHMS
+
+Android APK/AAB builds require Android SDK/Gradle and were not run in this Linux container.

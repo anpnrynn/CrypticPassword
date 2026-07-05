@@ -1,0 +1,61 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		A10000000000000000000001 /* CrypticPasswordSwing.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; name = CrypticPasswordSwing.java; path = ../src/CrypticPasswordSwing.java; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000002 = {isa = PBXGroup; children = (A10000000000000000000001,); sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		A10000000000000000000003 /* CrypticPasswordSwing */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-C .. app";
+			buildConfigurationList = A10000000000000000000004 /* Build configuration list for PBXLegacyTarget \"CrypticPasswordSwing\" */;
+			buildPhases = ();
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = ();
+			name = CrypticPasswordSwing;
+			passBuildSettingsInEnvironment = 1;
+			productName = CrypticPasswordSwing;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		A10000000000000000000005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = { LastUpgradeCheck = 1500; };
+			buildConfigurationList = A10000000000000000000006 /* Build configuration list for PBXProject \"CrypticPasswordSwing\" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base,);
+			mainGroup = A10000000000000000000002;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A10000000000000000000003,);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		A10000000000000000000007 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Debug; };
+		A10000000000000000000008 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Release; };
+		A10000000000000000000009 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Debug; };
+		A1000000000000000000000A /* Release */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000004 /* Build configuration list for PBXLegacyTarget \"CrypticPasswordSwing\" */ = {isa = XCConfigurationList; buildConfigurations = (A10000000000000000000007, A10000000000000000000008,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A10000000000000000000006 /* Build configuration list for PBXProject \"CrypticPasswordSwing\" */ = {isa = XCConfigurationList; buildConfigurations = (A10000000000000000000009, A1000000000000000000000A,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000000000000000000005 /* Project object */;
+}

@@ -1,0 +1,105 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20000000000000000000001 /* CrypticPasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* CrypticPasswordApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000002 /* CrypticPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CrypticPasswordApp.swift; path = ../src/swift/CrypticPasswordApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../package/swift/Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000004 /* CrypticPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypticPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A20000000000000000000005 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A20000000000000000000006 = {isa = PBXGroup; children = (A20000000000000000000007 /* Sources */, A20000000000000000000008 /* Products */); sourceTree = "<group>"; };
+		A20000000000000000000007 /* Sources */ = {isa = PBXGroup; children = (A20000000000000000000002 /* CrypticPasswordApp.swift */, A20000000000000000000003 /* Info.plist */); name = Sources; sourceTree = "<group>"; };
+		A20000000000000000000008 /* Products */ = {isa = PBXGroup; children = (A20000000000000000000004 /* CrypticPassword.app */); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A20000000000000000000009 /* CrypticPasswordSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2000000000000000000000A /* Build configuration list for PBXNativeTarget \"CrypticPasswordSwift\" */;
+			buildPhases = (A2000000000000000000000B /* Sources */, A20000000000000000000005 /* Frameworks */);
+			buildRules = ();
+			dependencies = ();
+			name = CrypticPasswordSwift;
+			productName = CrypticPassword;
+			productReference = A20000000000000000000004 /* CrypticPassword.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2000000000000000000000C /* Project object */ = {
+			isa = PBXProject;
+			attributes = { LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; };
+			buildConfigurationList = A2000000000000000000000D /* Build configuration list for PBXProject \"CrypticPasswordSwift\" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base,);
+			mainGroup = A20000000000000000000006;
+			productRefGroup = A20000000000000000000008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A20000000000000000000009 /* CrypticPasswordSwift */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2000000000000000000000B /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A20000000000000000000001 /* CrypticPasswordApp.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A2000000000000000000000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				INFOPLIST_FILE = ../package/swift/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_LDFLAGS = ("-framework", Cocoa);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cryptic.password.swift;
+				PRODUCT_NAME = CrypticPassword;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A2000000000000000000000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				INFOPLIST_FILE = ../package/swift/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_LDFLAGS = ("-framework", Cocoa);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cryptic.password.swift;
+				PRODUCT_NAME = CrypticPassword;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A20000000000000000000010 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Debug; };
+		A20000000000000000000011 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2000000000000000000000A /* Build configuration list for PBXNativeTarget \"CrypticPasswordSwift\" */ = {isa = XCConfigurationList; buildConfigurations = (A2000000000000000000000E /* Debug */, A2000000000000000000000F /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A2000000000000000000000D /* Build configuration list for PBXProject \"CrypticPasswordSwift\" */ = {isa = XCConfigurationList; buildConfigurations = (A20000000000000000000010 /* Debug */, A20000000000000000000011 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A2000000000000000000000C /* Project object */;
+}

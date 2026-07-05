@@ -1,0 +1,43 @@
+Validation performed in this Linux container on 2026-07-02 after adding version1_1, version2_0, version2_1, seed2, and fixed matrix colors.
+
+$ make core-test
+CrypticPassword core tests passed for version1_0, version1_1, version2_0, and version2_1.
+
+$ make mac-swift-test
+SWIFT_CORE_PASS_ALL_ALGORITHMS
+
+$ cd mac/swing && make clean all
+javac -Xlint:all -d build/classes src/CrypticPasswordSwing.java
+jar cfm build/jar/CrypticPassword.jar build/MANIFEST.MF -C build/classes .
+Created retained Swing macOS .app bundle under mac/swing/dist/CrypticPassword.app.
+
+$ cd mac/swing/netbeans/CrypticPasswordSwingNB && ant clean jar
+BUILD SUCCESSFUL
+Built dist/CrypticPasswordSwing.jar.
+
+$ cmake -S . -B build-cmake && cmake --build build-cmake && ctest --test-dir build-cmake --output-on-failure
+100% tests passed, 0 tests failed out of 1.
+
+Verified in source and tests:
+- Shared C core supports version1_0, version1_1, version2_0, and version2_1.
+- Swift algorithm test supports all four versions.
+- Swing source and NetBeans source compile with the new algorithm selector.
+- Matrix colors are set to #FF2A2A, #55D400, and #37abc8 by matrix.
+
+Not run in this Linux container:
+- Native macOS Swift/AppKit .app build, because AppKit and xcodebuild require macOS.
+- macOS DMG creation, because hdiutil requires macOS.
+- Windows Visual Studio/WiX/Inno installer build, because Visual Studio and Windows installer tools are not available here.
+- Linux GTK+ GUI compile, because gtk+-3.0 development headers are not installed in this container.
+
+Update on 2026-07-02 for default selected-button appearance:
+- Windows Win32 owner-drawn matrix buttons now draw clicked cells with COLOR_BTNFACE and DrawFrameControl.
+- Linux GTK+ buttons now remove the matrix CSS class after click, restoring the toolkit default button style.
+- macOS Swift/AppKit buttons now clear their colored layer and restore bordered rounded default buttons after click.
+- Retained Java Swing and NetBeans sources now restore UIManager Button defaults after click.
+- Matrix buttons no longer use OFF/ON labels.
+
+UI behavior update 1.5.0:
+- Matrix buttons have blank labels.
+- Unclicked buttons retain matrix colors.
+- Clicked buttons return to the default system button appearance on Win32, GTK+, Swift/AppKit, and Swing/NetBeans.

@@ -1,0 +1,17 @@
+CrypticPassword iOS 14+ project retained in version 1.5.0.
+
+Included:
+- ios/xcode/CrypticPasswordiOS.xcodeproj
+- ios/src/AppDelegate.swift
+- ios/src/SceneDelegate.swift
+- ios/src/CrypticPasswordAlgorithm.swift
+- ios/src/CrypticPasswordViewController.swift
+- ios/Info.plist
+- ios/Makefile
+- ios/packaging/ExportOptions.plist
+- ios/packaging/build_ipa.sh
+- ios/tests/CrypticPasswordAlgorithmSmoke.swift
+
+Local validation in this Linux container:
+- Swift algorithm smoke test compiled and ran with swiftc on Linux.
+- UIKit/Xcode build was not executed here because UIKit, iOS SDK, code signing, and xcodebuild require macOS with Xcode.

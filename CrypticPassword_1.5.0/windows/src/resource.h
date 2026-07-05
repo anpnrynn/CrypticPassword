@@ -1,0 +1,14 @@
+#pragma once
+#define IDI_APPICON 101
+#define IDR_MANIFEST 1
+#define IDC_PIN 1001
+#define IDC_GENERATE 1002
+#define IDC_RESET 1003
+#define IDC_BACK 1004
+#define IDC_NEXT 1005
+#define IDC_FINISH 1006
+#define IDC_OUTPUT 1007
+#define IDC_STATUS 1008
+#define IDC_PATTERN_LABEL 1009
+#define IDC_ALGORITHM 1010
+#define IDC_CELL_BASE 2000

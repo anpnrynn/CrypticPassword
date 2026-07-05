@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.anoop.crypticpassword'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.anoop.crypticpassword'
+        minSdk 31
+        targetSdk 35
+        versionCode 150
+        versionName '1.5.0'
+    }
+}
