@@ -1,6 +1,10 @@
 # LICENSE    
 Product is released as "Public Domain" Software.      
 
+# Information:   
+Designed by Anoop Kumar Narayanan      
+Initially coded by Anoop Kumar Narayanan    
+Coded by ChatGPT 5.5     
 
 # Inspiration:       
 
